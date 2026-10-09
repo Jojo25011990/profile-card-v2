@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+	--color-body: #f2f2f2;
+
+	--color-primary: #19a1ae;
+	--color-secondary: #2e3349;
+	--color-tertiary: #6b7082;
+	--color-quaternary: #e8e9ec;
+
+	--font-family-primary: "Kumbh Sans", sans-serif;
+
+	--breakpoint-mobile: 500px;
+}
+
+/* Container */
+/* First Values - Testing Only */
+/* background-position:
+right 45vw bottom 33vh,
+left 39vw top 52vh; */
+/* End of First Values - Testing Only */
+.container {
+	background-image:
+		url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+	background-repeat: no-repeat;
+	background-position:
+		right 35vw bottom 39vh,
+		left 33vw top 52vh;
+}
+
+@media (max-width: 500px) {
+	.container {
+		background-position:
+			right 60vw bottom 33vh,
+			left 25vw top 47vh;
+	}
+}
+/* End of Container */
